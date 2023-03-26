@@ -1,0 +1,726 @@
+[10:53:38.947][info] [#0:/home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/main.lua:66]: Lua Lsp startup, root: 	/home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server
+[10:53:38.947][info] [#0:/home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/main.lua:67]: ROOT:	/home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server
+[10:53:38.947][info] [#0:/home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/main.lua:68]: LOGPATH:	/home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/log
+[10:53:38.947][info] [#0:/home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/main.lua:69]: METAPATH:	/home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta
+[10:53:38.947][info] [#0:/home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/main.lua:70]: VERSION:	3.6.17
+[10:53:39.024][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 2.092 MB
+        # 00 : 2.092 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[10:53:39.039][info] [#0:script/client.lua:657]: Client init	{
+  capabilities = {
+    general = {
+      markdown = {
+        parser = "marked",
+        version = "4.0.10"
+      },
+      positionEncodings = { "utf-16" },
+      regularExpressions = {
+        engine = "ECMAScript",
+        version = "ES2020"
+      },
+      staleRequestSupport = {
+        cancel = true,
+        retryOnContentModified = { "textDocument/inlayHint", "textDocument/semanticTokens/full", "textDocument/semanticTokens/range", "textDocument/semanticTokens/full/delta" }
+      }
+    },
+    textDocument = {
+      callHierarchy = {
+        dynamicRegistration = true
+      },
+      codeAction = {
+        codeActionLiteralSupport = {
+          codeActionKind = {
+            valueSet = { "", "quickfix", "refactor", "refactor.extract", "refactor.inline", "refactor.rewrite", "source", "source.organizeImports" }
+          }
+        },
+        dataSupport = true,
+        disabledSupport = true,
+        dynamicRegistration = true,
+        honorsChangeAnnotations = false,
+        isPreferredSupport = true,
+        resolveSupport = {
+          properties = { "edit" }
+        }
+      },
+      codeLens = {
+        dynamicRegistration = true
+      },
+      colorProvider = {
+        dynamicRegistration = true
+      },
+      completion = {
+        completionItem = {
+          commitCharactersSupport = true,
+          deprecatedSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          insertReplaceSupport = true,
+          insertTextModeSupport = {
+            valueSet = { 1, 2 }
+          },
+          labelDetailsSupport = true,
+          preselectSupport = true,
+          resolveSupport = {
+            properties = { "documentation", "detail", "additionalTextEdits" }
+          },
+          snippetSupport = true,
+          tagSupport = {
+            valueSet = { 1 }
+          }
+        },
+        completionItemKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 }
+        },
+        completionList = {
+          itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode" }
+        },
+        contextSupport = true,
+        dynamicRegistration = true,
+        insertTextMode = 2
+      },
+      declaration = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      definition = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      diagnostic = {
+        dynamicRegistration = true,
+        relatedDocumentSupport = true
+      },
+      documentHighlight = {
+        dynamicRegistration = true
+      },
+      documentLink = {
+        dynamicRegistration = true,
+        tooltipSupport = true
+      },
+      documentSymbol = {
+        dynamicRegistration = true,
+        hierarchicalDocumentSymbolSupport = true,
+        labelSupport = true,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        },
+        tagSupport = {
+          valueSet = { 1 }
+        }
+      },
+      foldingRange = {
+        dynamicRegistration = true,
+        foldingRange = {
+          collapsedText = false
+        },
+        foldingRangeKind = {
+          valueSet = { "comment", "imports", "region" }
+        },
+        lineFoldingOnly = true,
+        rangeLimit = 5000
+      },
+      formatting = {
+        dynamicRegistration = true
+      },
+      hover = {
+        contentFormat = { "markdown", "plaintext" },
+        dynamicRegistration = true
+      },
+      implementation = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      inlayHint = {
+        dynamicRegistration = true,
+        resolveSupport = {
+          properties = { "tooltip", "textEdits", "label.tooltip", "label.location", "label.command" }
+        }
+      },
+      inlineValue = {
+        dynamicRegistration = true
+      },
+      linkedEditingRange = {
+        dynamicRegistration = true
+      },
+      onTypeFormatting = {
+        dynamicRegistration = true
+      },
+      publishDiagnostics = {
+        codeDescriptionSupport = true,
+        dataSupport = true,
+        relatedInformation = true,
+        tagSupport = {
+          valueSet = { 1, 2 }
+        },
+        versionSupport = true
+      },
+      rangeFormatting = {
+        dynamicRegistration = true
+      },
+      references = {
+        dynamicRegistration = true
+      },
+      rename = {
+        dynamicRegistration = true,
+        honorsChangeAnnotations = true,
+        prepareSupport = true,
+        prepareSupportDefaultBehavior = 1
+      },
+      selectionRange = {
+        dynamicRegistration = true
+      },
+      semanticTokens = {
+        augmentsSyntaxTokens = true,
+        dynamicRegistration = true,
+        formats = { "relative" },
+        multilineTokenSupport = false,
+        overlappingTokenSupport = false,
+        requests = {
+          full = {
+            delta = true
+          },
+          range = true
+        },
+        serverCancelSupport = true,
+        tokenModifiers = { "declaration", "definition", "readonly", "static", "deprecated", "abstract", "async", "modification", "documentation", "defaultLibrary" },
+        tokenTypes = { "namespace", "type", "class", "enum", "interface", "struct", "typeParameter", "parameter", "variable", "property", "enumMember", "event", "function", "method", "macro", "keyword", "modifier", "comment", "string", "number", "regexp", "decorator", "operator" }
+      },
+      signatureHelp = {
+        contextSupport = true,
+        dynamicRegistration = true,
+        signatureInformation = {
+          activeParameterSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          parameterInformation = {
+            labelOffsetSupport = true
+          }
+        }
+      },
+      synchronization = {
+        didSave = true,
+        dynamicRegistration = true,
+        willSave = true,
+        willSaveWaitUntil = true
+      },
+      typeDefinition = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      typeHierarchy = {
+        dynamicRegistration = true
+      }
+    },
+    window = {
+      showDocument = {
+        support = true
+      },
+      showMessage = {
+        messageActionItem = {
+          additionalPropertiesSupport = true
+        }
+      },
+      workDoneProgress = true
+    },
+    workspace = {
+      applyEdit = true,
+      codeLens = {
+        refreshSupport = true
+      },
+      configuration = true,
+      diagnostics = {
+        refreshSupport = true
+      },
+      didChangeConfiguration = {
+        dynamicRegistration = true
+      },
+      didChangeWatchedFiles = {
+        dynamicRegistration = true,
+        relativePatternSupport = true
+      },
+      executeCommand = {
+        dynamicRegistration = true
+      },
+      fileOperations = {
+        didCreate = true,
+        didDelete = true,
+        didRename = true,
+        dynamicRegistration = true,
+        willCreate = true,
+        willDelete = true,
+        willRename = true
+      },
+      inlayHint = {
+        refreshSupport = true
+      },
+      inlineValue = {
+        refreshSupport = true
+      },
+      semanticTokens = {
+        refreshSupport = true
+      },
+      symbol = {
+        dynamicRegistration = true,
+        resolveSupport = {
+          properties = { "location.range" }
+        },
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        },
+        tagSupport = {
+          valueSet = { 1 }
+        }
+      },
+      workspaceEdit = {
+        changeAnnotationSupport = {
+          groupsOnLabel = false
+        },
+        documentChanges = true,
+        failureHandling = "undo",
+        normalizesLineEndings = true,
+        resourceOperations = { "create", "rename", "delete" }
+      },
+      workspaceFolders = true
+    }
+  },
+  clientInfo = {
+    name = "coc.nvim",
+    version = "0.0.82"
+  },
+  initializationOptions = {
+    changeConfiguration = true
+  },
+  locale = "en_US",
+  processId = 32916,
+  rootPath = "/home/goalarch/.config/awesome/awesome-wm-widgets",
+  rootUri = "file:///home/goalarch/.config/awesome/awesome-wm-widgets",
+  trace = "off",
+  workDoneToken = "0437b2c1-9d60-476b-badb-0e4fee556d53",
+  workspaceFolders = { {
+      name = "awesome-wm-widgets",
+      uri = "file:///home/goalarch/.config/awesome/awesome-wm-widgets"
+    } }
+}
+[10:53:39.039][info] [#0:script/language.lua:137]: VSC language: en-us
+[10:53:39.039][info] [#0:script/language.lua:138]: LS  language: en-us
+[10:53:39.039][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/goalarch/.config/awesome/awesome-wm-widgets
+[10:53:39.043][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/log/file_home_goalarch_.config_awesome_awesome-wm-widgets.log
+[10:53:39.043][info] [#0:script/workspace/workspace.lua:48]: Workspace create: 	file:///home/goalarch/.config/awesome/awesome-wm-widgets
+[10:53:39.250][info] [#0:script/provider/provider.lua:46]: Load config from client	file:///home/goalarch/.config/awesome/awesome-wm-widgets
+[10:53:39.251][info] [#0:script/provider/provider.lua:47]: {
+  Lua = {
+    codeLens = {
+      enable = false
+    },
+    completion = {
+      autoRequire = true,
+      callSnippet = "Disable",
+      displayContext = 0,
+      enable = true,
+      keywordSnippet = "Replace",
+      postfix = "@",
+      requireSeparator = ".",
+      showParams = true,
+      showWord = "Fallback",
+      workspaceWord = true
+    },
+    diagnostics = {
+      disable = {},
+      disableScheme = { "git" },
+      enable = true,
+      globals = {},
+      groupFileStatus = {},
+      groupSeverity = {},
+      ignoredFiles = "Opened",
+      libraryFiles = "Opened",
+      neededFileStatus = {},
+      severity = {},
+      unusedLocalExclude = {},
+      workspaceDelay = 3000,
+      workspaceEvent = "OnSave",
+      workspaceRate = 100
+    },
+    doc = {
+      packageName = {},
+      privateName = {},
+      protectedName = {}
+    },
+    format = {
+      defaultConfig = {},
+      enable = true
+    },
+    hint = {
+      arrayIndex = "Auto",
+      await = true,
+      enable = true,
+      paramName = "All",
+      paramType = true,
+      semicolon = "SameLine",
+      setType = false
+    },
+    hover = {
+      enable = true,
+      enumsLimit = 5,
+      expandAlias = true,
+      previewFields = 50,
+      viewNumber = true,
+      viewString = true,
+      viewStringMax = 1000
+    },
+    misc = {
+      executablePath = "",
+      parameters = {}
+    },
+    runtime = {
+      builtin = {},
+      fileEncoding = "utf8",
+      meta = "${version} ${language} ${encoding}",
+      nonstandardSymbol = {},
+      path = { "?.lua", "?/init.lua" },
+      pathStrict = false,
+      plugin = "",
+      pluginArgs = {},
+      special = {},
+      unicodeName = false,
+      version = "Lua 5.4"
+    },
+    semantic = {
+      annotation = true,
+      enable = true,
+      keyword = false,
+      variable = true
+    },
+    signatureHelp = {
+      enable = true
+    },
+    spell = {
+      dict = {}
+    },
+    type = {
+      castNumberToInteger = true,
+      weakNilCheck = false,
+      weakUnionCheck = false
+    },
+    typeFormat = {
+      config = {}
+    },
+    window = {
+      progressBar = true,
+      statusBar = true
+    },
+    workspace = {
+      checkThirdParty = true,
+      ignoreDir = { ".vscode" },
+      ignoreSubmodules = true,
+      library = {},
+      maxPreload = 5000,
+      preloadFileSize = 500,
+      useGitIgnore = true,
+      userThirdParty = {}
+    }
+  }
+}
+[10:53:39.352][info] [#0:script/provider/completion.lua:43]: Enable completion.
+[10:53:39.353][info] [#0:script/provider/provider.lua:61]: Load config from client	fallback
+[10:53:39.357][info] [#0:script/provider/provider.lua:62]: {
+  Lua = {
+    codeLens = {
+      enable = false
+    },
+    completion = {
+      autoRequire = true,
+      callSnippet = "Disable",
+      displayContext = 0,
+      enable = true,
+      keywordSnippet = "Replace",
+      postfix = "@",
+      requireSeparator = ".",
+      showParams = true,
+      showWord = "Fallback",
+      workspaceWord = true
+    },
+    diagnostics = {
+      disable = {},
+      disableScheme = { "git" },
+      enable = true,
+      globals = {},
+      groupFileStatus = {},
+      groupSeverity = {},
+      ignoredFiles = "Opened",
+      libraryFiles = "Opened",
+      neededFileStatus = {},
+      severity = {},
+      unusedLocalExclude = {},
+      workspaceDelay = 3000,
+      workspaceEvent = "OnSave",
+      workspaceRate = 100
+    },
+    doc = {
+      packageName = {},
+      privateName = {},
+      protectedName = {}
+    },
+    format = {
+      defaultConfig = {},
+      enable = true
+    },
+    hint = {
+      arrayIndex = "Auto",
+      await = true,
+      enable = true,
+      paramName = "All",
+      paramType = true,
+      semicolon = "SameLine",
+      setType = false
+    },
+    hover = {
+      enable = true,
+      enumsLimit = 5,
+      expandAlias = true,
+      previewFields = 50,
+      viewNumber = true,
+      viewString = true,
+      viewStringMax = 1000
+    },
+    misc = {
+      executablePath = "",
+      parameters = {}
+    },
+    runtime = {
+      builtin = {},
+      fileEncoding = "utf8",
+      meta = "${version} ${language} ${encoding}",
+      nonstandardSymbol = {},
+      path = { "?.lua", "?/init.lua" },
+      pathStrict = false,
+      plugin = "",
+      pluginArgs = {},
+      special = {},
+      unicodeName = false,
+      version = "Lua 5.4"
+    },
+    semantic = {
+      annotation = true,
+      enable = true,
+      keyword = false,
+      variable = true
+    },
+    signatureHelp = {
+      enable = true
+    },
+    spell = {
+      dict = {}
+    },
+    type = {
+      castNumberToInteger = true,
+      weakNilCheck = false,
+      weakUnionCheck = false
+    },
+    typeFormat = {
+      config = {}
+    },
+    window = {
+      progressBar = true,
+      statusBar = true
+    },
+    workspace = {
+      checkThirdParty = true,
+      ignoreDir = { ".vscode" },
+      ignoreSubmodules = true,
+      library = {},
+      maxPreload = 5000,
+      preloadFileSize = 500,
+      useGitIgnore = true,
+      userThirdParty = {}
+    }
+  }
+}
+[10:53:39.463][info] [#0:script/library.lua:212]: Init builtin library at:	file:///home/goalarch/.config/awesome/awesome-wm-widgets
+[10:53:39.504][info] [#0:script/plugin.lua:86]: plugin path:	/home/goalarch/.config/awesome/awesome-wm-widgets
+[10:53:39.505][warn] [#0:script/plugin.lua:101]: plugin not found:	/home/goalarch/.config/awesome/awesome-wm-widgets
+[10:53:39.505][info] [#0:script/library.lua:212]: Init builtin library at:	nil
+[10:53:39.622][info] [#0:script/workspace/workspace.lua:322]: Preload start:	file:///home/goalarch/.config/awesome/awesome-wm-widgets
+[10:53:39.627][info] [#0:script/workspace/workspace.lua:328]: Scan files at:	file:///home/goalarch/.config/awesome/awesome-wm-widgets
+[10:53:39.642][info] [#0:script/workspace/workspace.lua:322]: Preload start:	<fallback>
+[10:53:39.645][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[10:53:39.646][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[10:53:39.646][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[10:53:39.647][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[10:53:39.647][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[10:53:39.647][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[10:53:39.648][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[10:53:39.649][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[10:53:39.649][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[10:53:39.649][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[10:53:39.650][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[10:53:39.707][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[10:53:39.707][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[10:53:39.707][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[10:53:39.707][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[10:53:39.707][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[10:53:39.707][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[10:53:39.708][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[10:53:39.708][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[10:53:39.708][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[10:53:39.708][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[10:53:39.708][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[10:53:39.809][info] [#0:script/workspace/workspace.lua:377]: Found 11 files at:	<fallback>
+[10:53:39.809][info] [#0:script/workspace/loading.lua:161]: Load files from disk:	<fallback>
+[10:53:39.810][info] [#0:script/workspace/workspace.lua:377]: Found 63 files at:	file:///home/goalarch/.config/awesome/awesome-wm-widgets
+[10:53:39.810][info] [#0:script/workspace/loading.lua:161]: Load files from disk:	file:///home/goalarch/.config/awesome/awesome-wm-widgets
+[10:53:39.812][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/basic.lua , size = 14.160 KB
+[10:53:39.831][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[10:53:39.831][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[10:53:39.831][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/os.lua , size = 4.347 KB
+[10:53:39.838][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[10:53:39.838][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[10:53:39.838][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[10:53:39.838][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/package.lua , size = 2.944 KB
+[10:53:39.842][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[10:53:39.842][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[10:53:39.842][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[10:53:39.842][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/debug.lua , size = 7.637 KB
+[10:53:39.857][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[10:53:39.857][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[10:53:39.857][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[10:53:39.857][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/string.lua , size = 6.183 KB
+[10:53:39.865][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[10:53:39.865][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[10:53:39.865][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[10:53:39.866][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/math.lua , size = 8.731 KB
+[10:53:39.878][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[10:53:39.878][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[10:53:39.878][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[10:53:39.879][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/io.lua , size = 6.364 KB
+[10:53:39.891][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[10:53:39.891][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[10:53:39.891][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[10:53:39.891][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/table.lua , size = 4.230 KB
+[10:53:39.897][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[10:53:39.897][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[10:53:39.897][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[10:53:39.898][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/utf8.lua , size = 2.386 KB
+[10:53:39.901][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[10:53:39.901][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[10:53:39.901][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[10:53:39.901][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/builtin.lua , size = 0.302 KB
+[10:53:39.902][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[10:53:39.902][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[10:53:39.902][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[10:53:39.903][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua , size = 2.590 KB
+[10:53:39.906][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[10:53:39.906][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[10:53:39.906][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/goalarch/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[10:53:39.906][info] [#0:script/workspace/loading.lua:173]: Loaded files takes [0.091] sec: <fallback>
+[10:53:39.906][info] [#0:script/workspace/loading.lua:182]: Compile files takes [0.000] sec: <fallback>
+[10:53:39.906][info] [#0:script/workspace/loading.lua:183]: Loaded finish:	<fallback>
+[10:53:39.906][info] [#0:script/workspace/workspace.lua:379]: Preload finish at:	<fallback>
+[10:53:39.929][warn] [#0:script/proto/proto.lua:129]: Response of [workspace/diagnostic/refresh] error [-32601]: Unhandled method workspace/diagnostic/refresh
+[10:53:39.929][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/battery-widget/battery.lua , size = 7.951 KB
+[10:53:39.937][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/pacman-widget/pacman.lua , size = 8.645 KB
+[10:53:39.946][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/brightness-widget/brightness.lua , size = 6.572 KB
+[10:53:39.954][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/run-shell/run-shell.lua , size = 5.407 KB
+[10:53:39.966][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/spotify-widget/spotify.lua , size = 6.171 KB
+[10:53:39.973][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/word-clock-widget/word-clock.lua , size = 4.261 KB
+[10:53:39.979][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/run-shell-3/run-shell.lua , size = 4.256 KB
+[10:53:39.983][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/batteryarc-widget/batteryarc.lua , size = 5.863 KB
+[10:53:39.988][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/gerrit-widget/gerrit.lua , size = 8.176 KB
+[10:53:39.996][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/experiments/spotify-player/spotify-player.lua , size = 6.315 KB
+[10:53:40.004][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/pactl-widget/volume.lua , size = 7.203 KB
+[10:53:40.012][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/pactl-widget/utils.lua , size = 0.495 KB
+[10:53:40.013][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/pactl-widget/pactl.lua , size = 3.265 KB
+[10:53:40.021][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/github-activity-widget/github-activity-widget.lua , size = 9.989 KB
+[10:53:40.034][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/cmus-widget/cmus.lua , size = 4.490 KB
+[10:53:40.042][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/apt-widget/apt-widget.lua , size = 12.388 KB
+[10:53:40.063][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/net-speed-widget/net-speed.lua , size = 3.490 KB
+[10:53:40.069][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/bitbucket-widget/bitbucket.lua , size = 14.152 KB
+[10:53:40.085][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/jira-widget/jira.lua , size = 10.424 KB
+[10:53:40.098][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/translate-widget/translate.lua , size = 6.237 KB
+[10:53:40.107][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/mpris-widget/init.lua , size = 6.173 KB
+[10:53:40.117][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/calendar-widget/calendar.lua , size = 8.575 KB
+[10:53:40.148][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/todo-widget/todo.lua , size = 11.562 KB
+[10:53:40.180][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/email-widget/email.lua , size = 1.351 KB
+[10:53:40.183][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/mpdarc-widget/mpdarc.lua , size = 3.920 KB
+[10:53:40.189][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/docker-widget/docker.lua , size = 14.402 KB
+[10:53:40.204][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/stackoverflow-widget/stackoverflow.lua , size = 3.986 KB
+[10:53:40.209][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/pomodoroarc-widget/pomodoroarc.lua , size = 4.482 KB
+[10:53:40.215][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/run-shell-2/run-shell-2.lua , size = 2.919 KB
+[10:53:40.219][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/run-shell-2/run.lua , size = 0.378 KB
+[10:53:40.220][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/goalarch/.config/awesome/awesome-wm-widgets/logout-menu-widget/logout-menu.lua
+[10:53:40.220][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/github-contributions-widget/themes.lua , size = 0.892 KB
+[10:53:40.221][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/github-contributions-widget/github-contributions-widget.lua , size = 3.362 KB
+[10:53:40.226][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/cpu-widget/cpu-widget.lua , size = 12.683 KB
+[10:53:40.250][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/weather-widget/weather.lua , size = 20.646 KB
+[10:53:40.270][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/weather-widget/locale/de.lua , size = 0.341 KB
+[10:53:40.271][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/weather-widget/locale/en.lua , size = 0.360 KB
+[10:53:40.272][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/weather-widget/locale/pt.lua , size = 0.372 KB
+[10:53:40.272][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/weather-widget/locale/fr.lua , size = 0.387 KB
+[10:53:40.273][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/github-prs-widget/init.lua , size = 16.103 KB
+[10:53:40.287][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/logout-popup-widget/logout-popup.lua , size = 5.771 KB
+[10:53:40.293][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/volume-widget/volume.lua , size = 7.855 KB
+[10:53:40.303][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/volume-widget/utils.lua , size = 2.819 KB
+[10:53:40.307][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/volume-widget/widgets/arc-widget.lua , size = 1.238 KB
+[10:53:40.309][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/volume-widget/widgets/horizontal-bar-widget.lua , size = 1.775 KB
+[10:53:40.311][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/volume-widget/widgets/vertical-bar-widget.lua , size = 1.976 KB
+[10:53:40.314][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/volume-widget/widgets/icon-widget.lua , size = 1.478 KB
+[10:53:40.316][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/volume-widget/widgets/icon-and-text-widget.lua , size = 1.829 KB
+[10:53:40.319][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/ram-widget/ram-widget.lua , size = 3.404 KB
+[10:53:40.324][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/gitlab-widget/gitlab.lua , size = 15.017 KB
+[10:53:40.338][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/fs-widget/fs-widget.lua , size = 6.481 KB
+[10:53:40.345][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/goalarch/.config/awesome/awesome-wm-widgets/spotify-shell/spotify-shell.lua , size = 1.877 KB
+[10:53:40.347][info] [#0:script/workspace/loading.lua:173]: Loaded files takes [0.475] sec: file:///home/goalarch/.config/awesome/awesome-wm-widgets
+[10:53:40.348][info] [#0:script/workspace/loading.lua:182]: Compile files takes [0.000] sec: file:///home/goalarch/.config/awesome/awesome-wm-widgets
+[10:53:40.348][info] [#0:script/workspace/loading.lua:183]: Loaded finish:	file:///home/goalarch/.config/awesome/awesome-wm-widgets
+[10:53:40.348][info] [#0:script/workspace/workspace.lua:379]: Preload finish at:	file:///home/goalarch/.config/awesome/awesome-wm-widgets
+[10:53:40.386][info] [#0:script/provider/diagnostic.lua:557]: Diagnostics scope [file:///home/goalarch/.config/awesome/awesome-wm-widgets], files count:[63]
+[10:53:40.386][warn] [#0:script/proto/proto.lua:129]: Response of [workspace/diagnostic/refresh] error [-32601]: Unhandled method workspace/diagnostic/refresh
+[10:53:40.386][warn] [#0:script/proto/proto.lua:178]: Method [textDocument/didOpen] takes [0.656]sec. {
+  jsonrpc = "2.0",
+  method = "textDocument/didOpen",
+  params = {
+    textDocument = {
+      languageId = "lua",
+      text = '"***"',
+      uri = "file:///home/goalarch/.config/awesome/awesome-wm-widgets/logout-menu-widget/logout-menu.lua",
+      version = 1
+    }
+  }
+}
+[10:53:40.397][warn] [#0:script/proto/proto.lua:178]: Method [textDocument/inlayHint] takes [0.557]sec. {
+  id = 1,
+  jsonrpc = "2.0",
+  method = "textDocument/inlayHint",
+  params = {
+    range = {
+      end = {
+        character = 0,
+        line = 47
+      },
+      start = {
+        character = 0,
+        line = 0
+      }
+    },
+    textDocument = {
+      uri = "file:///home/goalarch/.config/awesome/awesome-wm-widgets/logout-menu-widget/logout-menu.lua"
+    }
+  }
+}
+[10:53:43.110][info] [#0:script/provider/diagnostic.lua:574]: Diagnostics scope [file:///home/goalarch/.config/awesome/awesome-wm-widgets] finished, takes [1.635] sec.

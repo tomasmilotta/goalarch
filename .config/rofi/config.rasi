@@ -1,0 +1,181 @@
+configuration{
+	modi: "window,drun,run";	
+	show-icons: true;
+	drun-display-format: "{name}";
+	display-drun: "APPS";
+	display-window: "WINDOW";
+	display-run: "RUN";
+}
+
+@theme "theme.rasi"
+
+*{
+	background-color: @background-alt;
+	color: @foreground;
+	font: "Iosevka Nerd Font Complete Mono SemiBold 12";
+}
+
+window{
+	border: 4px;
+    border-color: @background;
+        width: 50%;
+	height: 50%;
+	border-radius: 10px;
+	transparency: "real";
+	location: center;
+	anchor: center;
+	fullscreen: false;
+	x-offset: 0px;
+	y-offset: 0px;
+	cursor: "default";
+	enabled:true;
+}
+
+mainbox{
+	enabled: true;
+	spacing: 0px;
+	background-color: transparent;
+	orientation: vertical;
+	children: ["inputbar","listview"];
+}
+
+inputbar{
+	enabled: true;
+	spacing: 8px;
+	padding: 10px 16px;
+	background-color: @background;
+	text-color: @foreground;
+	orientation: horizontal;
+	children: ["entry","spacer","mode-switcher"];
+}
+
+textbox-prompt{
+	enabled:true;
+	expand: false;
+	str: "";
+	background-color: transparent;
+	font: "Iosevka Nerd Font Complete Mono SemiBold 26";
+	text-color: @foreground;
+	padding: 0px 15px;
+	border-radius: 10px;
+	horizontal-align: 0.5;
+	vertical-align: 0.5;
+	text-color: inherit;
+}
+
+entry{
+	enabled: true;
+	padding: 14px;
+	expand:false;
+	width: 320px;
+	border-radius: 10px;
+	background-color: @background-secondary;
+	text-color: inherit;
+	cursor: text;
+	placeholder: "Search";
+	placeholder-color: @foreground-alt;
+}
+
+/***** SPACER BETWEEN INPUT BAR AND SWITCHER TO ALIGN SWITCHER TO END *******/
+spacer{
+	expand: true;
+	background-color: transparent;
+}
+
+mode-switcher{
+	enabled: true;
+	spacing: 10px;
+	background-color: transparent;
+	text-color: @foreground;
+	expand: true;
+}
+
+button{
+	padding:18px;
+	border-radius: 10px;
+	background-color: transparent;
+	text-color: @foreground;
+	cursor: pointer;
+	font: "Iosevka Nerd Font Complete Mono SemiBold 10";
+	vertical-align: 0.5;
+	expand: false;
+}
+
+button selected{
+	background-color: @background-secondary;
+	text-color: @selected;
+}
+
+
+listview{
+	enabled: true;
+	columns: 1;
+	lines: 9;
+	padding: 12px 24px;
+	cycle: true;
+	dynamic: true;
+	scrollbar: false;
+	layout: vertical;
+	reverse: false;
+	fixed-height: true;
+	fixed-columns: true;
+	spacing: 12px;
+	background-color: @background-secondary;
+	text-color: @foreground;
+	cursor: "default";
+}
+
+element{
+	enabled: true;
+	spacing: 12px;
+	padding: 4px;
+	border-radius: 10px;
+	background-color: transparent;
+	text-color: @foreground;
+	cursor: pointer;
+}
+
+element-icon{
+	background-color: transparent;
+	text-color: inherit;
+	size: 32px;
+	cursor: pointer;
+}
+
+element-text{
+	background-color: transparent;
+	text-color: inherit;
+	vertical-align: 0.5;
+	horizontal-align: 0.01;
+	cursor: pointer;
+}
+
+element normal.normal{
+	background-color: inherit;
+	text-color: inherit;
+}
+
+element normal.urgent{
+	background-color: @error;
+	text-color: @foreground;
+}
+
+element normal.active{
+	background-color: @tertiary;
+	text-color: inherit;
+}
+
+element selected.normal{
+	background-color: @selected;
+	text-color: @foreground;
+}
+
+element selected.urgent{
+	background-color: @error;
+	text-color: @foreground;
+}
+
+element selected.active{
+	background-color: @tertiary;
+	text-color: @foreground;
+}

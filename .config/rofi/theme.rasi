@@ -1,0 +1,13 @@
+* {
+	background: #1E5128;
+	background-alt: #3D4A3E;
+	foreground: #D8E9A8;
+	background-secondary: #191A19;
+	foreground-alt: #FFFBCE;
+	selected: #4E9F3D;
+	true: #005171;
+	secondary: #D8E9A8;
+	tertiary: #1E5128;
+	error: #85232B;
+	outline: #938f99;
+}

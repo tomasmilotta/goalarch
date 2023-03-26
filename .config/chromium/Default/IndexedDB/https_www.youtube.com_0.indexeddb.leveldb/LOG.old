@@ -1,0 +1,7 @@
+2023/03/15-14:38:41.338 dde Reusing MANIFEST /home/goalarch/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/03/15-14:38:41.338 dde Recovering log #3
+2023/03/15-14:38:41.340 dde Reusing old log /home/goalarch/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000003.log 
+2023/03/15-14:38:41.766 de0 Level-0 table #5: started
+2023/03/15-14:38:41.779 de0 Level-0 table #5: 53917 bytes OK
+2023/03/15-14:38:41.784 de0 Delete type=0 #3
+2023/03/15-14:38:41.785 ddd Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)

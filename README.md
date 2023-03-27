@@ -21,7 +21,8 @@ Most keymaps for specific packages can be found via its documentations or in .co
 
 
 | Keymap | Task | 
-| mod+r | Open default Rofi menu |
+| --- | --- |
+| mod+r  | Open default Rofi menu |
 | mod+shift+c | Close selected window |
 | mod+f | Fullscren |
 | mod+ctrl+r | Restart AwesomeWM |

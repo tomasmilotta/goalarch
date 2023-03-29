@@ -6,6 +6,9 @@ This system is focused on using window manager Awesome and whole focus is to use
 
 Usage is heavily focused on keyboard shortcuts, to minimize usage of mouse.
 
+![Alt text](/images/desktop.png)
+![Alt text](/images/login.png)
+
 # INFO
 
 - **OS**: Arch Linux

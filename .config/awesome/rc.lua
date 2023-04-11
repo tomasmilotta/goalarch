@@ -12,7 +12,6 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 require("awful.hotkeys_popup.keys")
 
 -- CUSTOM REQUIRE FILES ** 
-require("colors")
 local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 

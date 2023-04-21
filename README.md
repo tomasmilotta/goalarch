@@ -20,6 +20,11 @@ Usage is heavily focused on keyboard shortcuts, to minimize usage of mouse.
 - **File Manager**: ranger
 - **Editor**: nvim
 
+# LOGIN
+
+ID: goalarch
+Password: admin
+
 
 # Basic Keymaps
 

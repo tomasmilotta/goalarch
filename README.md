@@ -22,8 +22,8 @@ Usage is heavily focused on keyboard shortcuts, to minimize usage of mouse.
 
 # LOGIN
 
-ID: goalarch
-Password: admin
+- **ID**: goalarch
+- **Password**: admin
 
 # Download
 

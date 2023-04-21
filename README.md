@@ -25,6 +25,12 @@ Usage is heavily focused on keyboard shortcuts, to minimize usage of mouse.
 ID: goalarch
 Password: admin
 
+# SET UP
+
+In case you are interested in a specific configuration file, you cam simply download that file and use it in your system without having to use my entire setup.
+Navigate to the relevant file in the repository and click on it. From there, you can either copy the contents of the file or download the file to your computer.
+Please note that these configurations files are tailored to my specific needs and preferences, sou you may need to modify them to suit your own needs. However, I hope that they can serve as a helpful starting point for your own efforts.
+
 
 # Basic Keymaps
 

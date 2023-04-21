@@ -29,7 +29,7 @@ Password: admin
 
 You can download .ova image of the entire system exported via VirtualBox. Although format should be universally usable with many virtualization tools its recommended to use VirtualBox to ease of use.
 
-[Download] (https://drive.google.com/file/d/1nkFJo3MQND6luOhSl9c-OfXHELGe6yCM/view?usp=sharing)
+[Download](https://drive.google.com/file/d/1nkFJo3MQND6luOhSl9c-OfXHELGe6yCM/view?usp=sharing)
 
 # SET UP
 

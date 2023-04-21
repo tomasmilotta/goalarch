@@ -1,6 +1,7 @@
 local builtin = require('telescope.builtin')
+-- KEYMAP TOP OPEN TREESITTER
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 
 -- CUSTOM CONFIG
 local colors = {

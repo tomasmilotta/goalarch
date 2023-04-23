@@ -1,1 +1,11 @@
 .config/chromium/
+
+.config/coc
+
+.config/gtk-2.0
+
+.config/gtk-3.0
+
+.config/pulse
+
+user-dirs*
